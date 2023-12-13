@@ -1,3 +1,4 @@
+import resource
 from app import App
 
 app = App()

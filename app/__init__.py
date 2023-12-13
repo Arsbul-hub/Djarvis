@@ -4,11 +4,13 @@ from vosk import Model, KaldiRecognizer
 import pyaudio
 
 from app.brain import Brain
+from app.commands import CommandManager
 from app.recognizer import Recognizer
 
 
 class App:
-    brain = Brain()
+    command_manager = CommandManager()
+    brain = Brain(command_manager)
     recognizer = Recognizer(brain.analyse)
 
     def run(self):

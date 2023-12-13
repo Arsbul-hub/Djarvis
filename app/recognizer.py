@@ -13,9 +13,10 @@ class Recognizer:
 
     def __init__(self, action):
         self.action = action
-        model = Model(r"model")
+        model = Model(r"model-small")
 
         self.recognizer = KaldiRecognizer(model, RATE)
+        print("Model Loaded")
         self.audio = pyaudio.PyAudio()
         for i in range(self.audio.get_device_count()):
             dev = self.audio.get_device_info_by_index(i)
@@ -25,7 +26,7 @@ class Recognizer:
             channels=1,
             rate=RATE,
             input=True,
-            input_device_index=self.audio_input,
+            #input_device_index=self.audio_input,
             frames_per_buffer=CHUNK
         )
         self.stream.start_stream()
