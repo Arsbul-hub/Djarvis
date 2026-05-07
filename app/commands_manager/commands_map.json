@@ -1,0 +1,713 @@
+{
+  "commands": [
+    {
+      "name": "Привет",
+      "description": "Приветствие",
+      "script": "greeting",
+      "args": [],
+      "children": [
+        {
+          "name": "Тебе",
+          "description": "Ответное приветствие",
+          "script": "say",
+          "args": ["И тебе привет!"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "",
+      "description": "Чисто названное имя",
+      "script": "say",
+      "args": ["Я тут"],
+      "children": null
+    },
+    {
+      "name": "Скажи",
+      "description": "Действие «скажи»",
+      "script": null,
+      "args": null,
+      "children": [
+        {
+          "name": "триста",
+          "description": "Шутка",
+          "script": "say",
+          "args": ["Спросил ты у тракториста? Спросил ты у тракториста..."],
+          "children": []
+        },
+        {
+          "name": "привет",
+          "description": "Сказать привет",
+          "script": "say",
+          "args": ["Привет!"],
+          "children": [
+            {
+              "name": "мне",
+              "description": "Привет мне",
+              "script": "say",
+              "args": ["Привет тебе, дорогой друг!"],
+              "children": []
+            },
+            {
+              "name": "ему",
+              "description": "Привет ему",
+              "script": "say",
+              "args": ["Передаю привет ему!"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "пока",
+          "description": "Сказать пока",
+          "script": "say",
+          "args": ["Пока! До новых встреч."],
+          "children": []
+        },
+        {
+          "name": "анекдот",
+          "description": "Рассказать анекдот",
+          "script": "say",
+          "args": ["Купил мужик шляпу, а она ему как раз."],
+          "children": []
+        },
+        {
+          "name": "комплимент",
+          "description": "Сделать комплимент",
+          "script": "say",
+          "args": ["Ты замечательный человек!"],
+          "children": []
+        },
+        {
+          "name": "тост",
+          "description": "Произнести тост",
+          "script": "say",
+          "args": ["За здоровье и удачу! До дна!"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Как",
+      "description": "Базовый вопрос",
+      "script": "say",
+      "args": ["Что как?"],
+      "children": [
+        {
+          "name": "Дела",
+          "description": "Вопрос о делах",
+          "script": "say",
+          "args": ["Нормально, а как у вас?"],
+          "children": []
+        },
+        {
+          "name": "Жизнь",
+          "description": "Вопрос о жизни",
+          "script": "say",
+          "args": ["Жизнь бьёт ключом, и чаще по голове, но мы держимся."],
+          "children": []
+        },
+        {
+          "name": "Настроение",
+          "description": "Вопрос о настроении",
+          "script": "say",
+          "args": ["Замечательное, особенно после твоего вопроса."],
+          "children": []
+        },
+        {
+          "name": "Сам",
+          "description": "Вопрос в ответ",
+          "script": "say",
+          "args": ["Я-то в порядке, а вот ты как?"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Что",
+      "description": "Вопрос «что»",
+      "script": "say",
+      "args": ["Что именно?"],
+      "children": [
+        {
+          "name": "нового",
+          "description": "Что нового",
+          "script": "say",
+          "args": ["Всё по-старому, но я стараюсь."],
+          "children": []
+        },
+        {
+          "name": "делаешь",
+          "description": "Что делаешь",
+          "script": "say",
+          "args": ["Общаюсь с тобой, это главное."],
+          "children": []
+        },
+        {
+          "name": "случилось",
+          "description": "Что случилось",
+          "script": "say",
+          "args": ["Ничего страшного, просто живу в этом чате."],
+          "children": []
+        },
+        {
+          "name": "ты умеешь",
+          "description": "Что ты умеешь",
+          "script": "say",
+          "args": ["Я умею общаться, шутить, поддерживать и учиться новому."],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Кто",
+      "description": "Вопрос «кто»",
+      "script": "say",
+      "args": ["Кто именно вас интересует?"],
+      "children": [
+        {
+          "name": "ты",
+          "description": "Кто ты",
+          "script": "say",
+          "args": ["Я твой цифровой ассистент, готовый помочь."],
+          "children": []
+        },
+        {
+          "name": "я",
+          "description": "Кто я",
+          "script": "say",
+          "args": ["Ты — человек, с которым я общаюсь. И это здорово!"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Где",
+      "description": "Вопрос «где»",
+      "script": "say",
+      "args": ["Где что?"],
+      "children": [
+        {
+          "name": "я",
+          "description": "Где я",
+          "script": "say",
+          "args": ["Ты там, где тебе комфортно, а я везде."],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Зачем",
+      "description": "Вопрос «зачем»",
+      "script": "say",
+      "args": ["Зачем? Это философский вопрос."],
+      "children": [
+        {
+          "name": "нужен",
+          "description": "Зачем нужен бот",
+          "script": "say",
+          "args": ["Чтобы помогать, развлекать и быть рядом."],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Почему",
+      "description": "Вопрос «почему»",
+      "script": "say",
+      "args": ["Интересный вопрос."],
+      "children": [
+        {
+          "name": "небо",
+          "description": "Почему небо голубое",
+          "script": "say",
+          "args": ["Из-за рассеивания Рэлея."],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Сколько",
+      "description": "Вопрос «сколько»",
+      "script": "say",
+      "args": ["Чего именно?"],
+      "children": [
+        {
+          "name": "времени",
+          "description": "Который час",
+          "script": "say",
+          "args": ["Время — понятие относительное, но сейчас хорошее время для общения."],
+          "children": []
+        },
+        {
+          "name": "лет",
+          "description": "Сколько лет боту",
+          "script": "say",
+          "args": ["Я вечно молодой алгоритм."],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Хочу",
+      "description": "Выражение желания",
+      "script": "say",
+      "args": ["Чего бы тебе хотелось?"],
+      "children": [
+        {
+          "name": "чай",
+          "description": "Захотеть чай",
+          "script": "say",
+          "args": ["Отличный выбор! Зелёный или чёрный?"],
+          "children": []
+        },
+        {
+          "name": "спать",
+          "description": "Хочу спать",
+          "script": "say",
+          "args": ["Сладких снов! Я покараулю."],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Я",
+      "description": "Начало фразы о себе",
+      "script": "say",
+      "args": ["Что насчёт тебя?"],
+      "children": [
+        {
+          "name": "устал",
+          "description": "Я устал",
+          "script": "say",
+          "args": ["Отдохни немного, ты заслужил."],
+          "children": []
+        },
+        {
+          "name": "рад",
+          "description": "Я рад",
+          "script": "say",
+          "args": ["Это замечательно! Делись радостью."],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Ты",
+      "description": "Обращение к боту",
+      "script": "say",
+      "args": ["Я слушаю."],
+      "children": [
+        {
+          "name": "умный",
+          "description": "Ты умный",
+          "script": "say",
+          "args": ["Спасибо! Я стараюсь."],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Помоги",
+      "description": "Просьба о помощи",
+      "script": "say",
+      "args": ["Чем я могу помочь?"],
+      "children": [
+        {
+          "name": "с",
+          "description": "Уточнение",
+          "script": null,
+          "args": null,
+          "children": [
+            {
+              "name": "математикой",
+              "description": "Помощь с математикой",
+              "script": "say",
+              "args": ["Сколько будет 2+2? Конечно 4."],
+              "children": []
+            },
+            {
+              "name": "советом",
+              "description": "Помощь советом",
+              "script": "say",
+              "args": ["Лучший совет — доверять себе."],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Расскажи",
+      "description": "Просьба рассказать",
+      "script": null,
+      "args": null,
+      "children": [
+        {
+          "name": "анекдот",
+          "description": "Анекдот",
+          "script": "say",
+          "args": ["Идёт Колобок по лесу, а навстречу Лиса..."],
+          "children": [
+            {
+              "name": "ещё",
+              "description": "Ещё анекдот",
+              "script": "say",
+              "args": ["Встретились два программиста..."],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "сказку",
+          "description": "Сказку",
+          "script": "say",
+          "args": ["Жили-были дед да баба..."],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Игра",
+      "description": "Предложение игры",
+      "script": null,
+      "args": null,
+      "children": [
+        {
+          "name": "угадай число",
+          "description": "Угадай число",
+          "script": "say",
+          "args": ["Загадал число от 1 до 10. Угадывай!"],
+          "children": [
+            {
+              "name": "5",
+              "description": "Вариант 5",
+              "script": "say",
+              "args": ["Нет, не пять."],
+              "children": []
+            },
+            {
+              "name": "7",
+              "description": "Вариант 7",
+              "script": "say",
+              "args": ["Почти, но нет."],
+              "children": []
+            }
+          ]
+        },
+        {
+          "name": "города",
+          "description": "Игра в города",
+          "script": "say",
+          "args": ["Москва. Тебе на 'А'."],
+          "children": [
+            {
+              "name": "Архангельск",
+              "description": "Ответ Архангельск",
+              "script": "say",
+              "args": ["Архангельск на 'К', мне на 'Н'. Новосибирск!"],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Скучно",
+      "description": "Заявление о скуке",
+      "script": "say",
+      "args": ["Давай поиграем или расскажу анекдот?"],
+      "children": [
+        {
+          "name": "анекдот",
+          "description": "Выбор анекдота",
+          "script": "say",
+          "args": ["В аптеке: «Дайте мне что-нибудь от головы»..."],
+          "children": []
+        },
+        {
+          "name": "игру",
+          "description": "Выбор игры",
+          "script": "say",
+          "args": ["Давай играть в слова. Твоё слово первое."],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Настроение",
+      "description": "Разговор о настроении",
+      "script": "say",
+      "args": ["Моё настроение зависит от тебя."],
+      "children": [
+        {
+          "name": "хорошее",
+          "description": "Хорошее настроение",
+          "script": "say",
+          "args": ["Это прекрасно! Делитесь позитивом."],
+          "children": []
+        },
+        {
+          "name": "плохое",
+          "description": "Плохое настроение",
+          "script": "say",
+          "args": ["Мне жаль. Хочешь, попробуем его поднять?"],
+          "children": [
+            {
+              "name": "да",
+              "description": "Согласие поднять",
+              "script": "say",
+              "args": ["*виртуальные объятия* Стало теплее?"],
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Поздравляю",
+      "description": "Поздравление",
+      "script": "say",
+      "args": ["С чем поздравляешь?"],
+      "children": [
+        {
+          "name": "с днём рождения",
+          "description": "День рождения",
+          "script": "say",
+          "args": ["С днём рождения! Счастья, здоровья!"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Спасибо",
+      "description": "Благодарность",
+      "script": "say",
+      "args": ["Пожалуйста! Обращайся."],
+      "children": null
+    },
+    {
+      "name": "Извини",
+      "description": "Извинение",
+      "script": "say",
+      "args": ["Не стоит извинений. Я не обижаюсь."],
+      "children": null
+    },
+    {
+      "name": "Да",
+      "description": "Утверждение",
+      "script": "say",
+      "args": ["Хорошо, продолжаем."],
+      "children": [
+        {
+          "name": "согласен",
+          "description": "Да, согласен",
+          "script": "say",
+          "args": ["Рад, что мы на одной волне."],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Нет",
+      "description": "Отрицание",
+      "script": "say",
+      "args": ["Нет так нет. Что предложишь?"],
+      "children": null
+    },
+    {
+      "name": "Погода",
+      "description": "Вопрос о погоде",
+      "script": "say",
+      "args": ["Я не синоптик, но за окном вроде неплохо."],
+      "children": [
+        {
+          "name": "сегодня",
+          "description": "Погода сегодня",
+          "script": "say",
+          "args": ["Сегодня облачно, возможны осадки в виде хорошего настроения."],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Совет",
+      "description": "Просьба совета",
+      "script": "say",
+      "args": ["Не откладывай на завтра то, что можно сделать сегодня."],
+      "children": null
+    },
+    {
+      "name": "Цитата",
+      "description": "Запрос цитаты",
+      "script": "say",
+      "args": ["«Будьте собой, все остальные роли уже заняты» — Оскар Уайльд."],
+      "children": null
+    },
+    {
+      "name": "Факт",
+      "description": "Интересный факт",
+      "script": "say",
+      "args": ["Осьминоги имеют три сердца, и их кровь голубая."],
+      "children": null
+    },
+    {
+      "name": "Мотивация",
+      "description": "Мотивирующая фраза",
+      "script": "say",
+      "args": ["Ты сможешь всё, что захочешь. Главное — начать!"],
+      "children": null
+    },
+    {
+      "name": "Секрет",
+      "description": "Секрет от бота",
+      "script": "say",
+      "args": ["Я на самом деле очень люблю, когда со мной общаются."],
+      "children": null
+    },
+    {
+      "name": "Повтори",
+      "description": "Просьба повторить",
+      "script": "say",
+      "args": ["Что именно повторить? Я много чего говорил."],
+      "children": [
+        {
+          "name": "последнее",
+          "description": "Повторить последнее",
+          "script": "say",
+          "args": ["Последнее было: «Что именно повторить?»"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Громче",
+      "description": "Сделать громче",
+      "script": "say",
+      "args": ["НЕ МОГУ ГРОМЧЕ, ЭТО ТЕКСТ!"],
+      "children": null
+    },
+    {
+      "name": "Тихо",
+      "description": "Сделать тише",
+      "script": "say",
+      "args": ["Тс-с-с... Я перешёл на шёпот."],
+      "children": null
+    },
+    {
+      "name": "Конец",
+      "description": "Завершить диалог",
+      "script": "say",
+      "args": ["Конец связи? Заходи ещё."],
+      "children": null
+    },
+    {
+      "name": "Приветствую",
+      "description": "Формальное приветствие",
+      "script": "say",
+      "args": ["Моё почтение."],
+      "children": null
+    },
+    {
+      "name": "Здравствуй",
+      "description": "Приветствие",
+      "script": "greeting",
+      "args": [],
+      "children": [
+        {
+          "name": "друг",
+          "description": "Здравствуй, друг",
+          "script": "say",
+          "args": ["Здравствуй, дорогой друг!"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Доброе",
+      "description": "Время суток",
+      "script": null,
+      "args": null,
+      "children": [
+        {
+          "name": "утро",
+          "description": "Доброе утро",
+          "script": "say",
+          "args": ["Доброе утро! Как спалось?"],
+          "children": []
+        },
+        {
+          "name": "день",
+          "description": "Добрый день",
+          "script": "say",
+          "args": ["Добрый день! Продуктивного дня!"],
+          "children": []
+        },
+        {
+          "name": "вечер",
+          "description": "Добрый вечер",
+          "script": "say",
+          "args": ["Добрый вечер! Приятного отдыха."],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Можно",
+      "description": "Запрос разрешения",
+      "script": "say",
+      "args": ["Что именно?"],
+      "children": [
+        {
+          "name": "вопрос",
+          "description": "Задать вопрос",
+          "script": "say",
+          "args": ["Конечно, спрашивай."],
+          "children": []
+        }
+      ]
+    },
+    {
+      "name": "Удали",
+      "description": "Удалить сообщение",
+      "script": "say",
+      "args": ["Я не могу удалить, но могу представить, что чисто."],
+      "children": null
+    },
+    {
+      "name": "Пока",
+      "description": "Прощание",
+      "script": "say",
+      "args": ["До свидания! Хорошего дня."],
+      "children": null
+    },
+    {
+      "name": "Поехали",
+      "description": "Побуждение к действию",
+      "script": "say",
+      "args": ["Поехали! Вжух!"],
+      "children": null
+    },
+    {
+      "name": "Стоп",
+      "description": "Остановка",
+      "script": "say",
+      "args": ["Стоп машина! Остановились."],
+      "children": null
+    },
+    {
+      "name": "Круто",
+      "description": "Выражение одобрения",
+      "script": "say",
+      "args": ["Ага, я и сам в восторге."],
+      "children": null
+    },
+    {
+      "name": "Случайное",
+      "description": "Что-нибудь случайное",
+      "script": "say",
+      "args": ["Однажды в студёную зимнюю пору..."],
+      "children": null
+    }
+  ]
+}
