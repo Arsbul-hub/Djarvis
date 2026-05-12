@@ -1,4 +1,9 @@
-from app import App
+from multiprocessing import freeze_support
 
-app = App()
-app.run()
+
+if __name__ == '__main__':
+    freeze_support()
+
+    from app import App
+    app = App()
+    app.run()

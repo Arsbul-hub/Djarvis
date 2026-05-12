@@ -1,5 +1,5 @@
-NAME = "Ромашка"
+NAME = "Шлюхи"
 NAME_LOWER = NAME.lower()
-CHUNK = 1024 # 4096 for small
-RATE = 44100 # 44100 for small
 
+RATE = 16000 # 44100 for small
+CHUNK = int(RATE * 0.03) # 4096 for small

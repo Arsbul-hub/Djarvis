@@ -1,6 +1,6 @@
 from app.executor import speech_manager
 
 
-def execute( *args, **kwargs):
+def execute(shared_buffer, *args, **kwargs):
     speech_manager.say(args[0])
 
